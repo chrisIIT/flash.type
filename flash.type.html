@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+    <title>flash.type</title>
+    <head>
+        <meta name="description" content="flash.type typing tool using flash card methods.">
+        <meta name="keywords" content="Chris Sanders, Portfolio, Coding, HTML, CSS, Java, JavaScript, projectsanders, sandersproject, flash.type">
+        <meta name="author" content="Chris Sanders">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../images/icons/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/icons/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/icons/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/icons/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../images/icons/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../images/icons/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../images/icons/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../images/icons/apple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="../images/icons/favicon-196x196.png" sizes="196x196" />
+        <link rel="icon" type="image/png" href="../images/icons/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="../images/icons/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="../images/icons/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="../images/icons/favicon-128.png" sizes="128x128" />
+        <meta name="application-name" content="&nbsp;"/>
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+        <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+        <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+        <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+        
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,300italic,400italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900italic' rel='stylesheet' type='text/css'>
+        <link href="main.css" rel=stylesheet>
+        <link href="reset.css" rel="stylesheet">            
+        <script type="text/javascript" src="flashtype.js"></script>
+    </head>
+    <body>
+        <div id="body">
+            <div id="header" class="center">
+                <p id="title">Let's Type</p>
+                <p class="desc"><span class="black bold">flash.type</span> teaches you how to type using flash-card methods.</p>
+                <p class="desc"> Type <span class="bold black">any key</span> to begin your <span class="bold black">journey to success</span>. &nbsp;<span class="small">(Just don't look down at your keyboard).</span></p>
+            </div>
+            <div id="text" class="center">
+                 <div id="data">
+                     <div id="reset">Reset</div>&nbsp;
+                     <div id="correct" class="bold">Correct&nbsp;&nbsp;<div id="c">&nbsp;</div></div>
+                     <div id="incorrect" class="bold">Incorrect&nbsp;&nbsp;<div id="ic">&nbsp;</div></div>
+                     <div id="accuracy" class="bold">Accuracy<div id="ac">&nbsp;</div></div> 
+                 </div>
+                <span id="left">&nbsp;</span><span id="middle">&nbsp;</span><span id="right">&nbsp;</span>
+                <img src="check.png" id="checkmark">
+                <img src="x.png" id="ex"><span id ="wrongInput"></span>
+            </div>
+            <div id="keyboard" class="center">
+                <div id="layertop">
+                <div class="inline box"><span class="keyz">Q</span></div>
+                <div class="inline box"><span class="keyz">W</span></div>
+                <div class="inline box"><span class="keyz">E</span></div>
+                <div class="inline box"><span class="keyz">R</span></div>
+                <div class="inline box"><span class="keyz">T</span></div>
+                <div class="inline box"><span class="keyz">Y</span></div>
+                <div class="inline box"><span class="keyz">U</span></div>
+                <div class="inline box"><span class="keyz">I</span></div>
+                <div class="inline box"><span class="keyz">O</span></div>
+                <div class="inline box"><span class="keyz">P</span></div>
+                </div>
+                <div id="layermiddle">
+                <div class="inline box"><span class="keyz">A</span></div>
+                <div class="inline box"><span class="keyz">S</span></div>
+                <div class="inline box"><span class="keyz">D</span></div>
+                <div class="inline box"><span class="keyz">F</span></div>
+                <div class="inline box"><span class="keyz">G</span></div>
+                <div class="inline box"><span class="keyz">H</span></div>
+                <div class="inline box"><span class="keyz">J</span></div>
+                <div class="inline box"><span class="keyz">K</span></div>
+                <div class="inline box"><span class="keyz">L</span></div>
+                </div>
+                <div id="layerbottom">
+                <div class="inline box"><span class="keyz">Z</span></div>
+                <div class="inline box"><span class="keyz">X</span></div>
+                <div class="inline box"><span class="keyz">C</span></div>
+                <div class="inline box"><span class="keyz">V</span></div>
+                <div class="inline box"><span class="keyz">B</span></div>
+                <div class="inline box"><span class="keyz">N</span></div>
+                <div class="inline box"><span class="keyz">M</span></div>
+                <div class="inline box"><span class="keyz"></span></div>
+                </div>          
+            </div>
+            <div id="text-2" class="center">
+            <p id="desc-2">Need more of a <span class="black">challenge</span>? Try <span class="black">hiding</span> the keyboard.</p>
+            <div id="hide"><span id="hideButton">Hide</span></div>
+            </div>
+        </div>
+        <div id="footer" class="center">
+        <span>Created by &nbsp;&nbsp;<img src="Logo%20Vector.png" id="logo" onclick="location.href='http://www.projectsanders.com';">&nbsp;&nbsp; Chris Sanders</span>
+           <!-- <span>Check out my <a href="http://www.projectsanders.com">website</a></span> -->
+            <a id="changelog" href="changelog.txt">Changelog</a>
+        </div>
+    </body>
+</html>
